@@ -11,34 +11,28 @@
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-  <div class="slide-cart"></div>
-    <div class="header">
+  <div class="header">
+    <div class="mainheader">
        <!-- <img src="images/logo.jpg" alt="">-->
-        <div class="content">
-         <img src="images/icon.png" alt="">
-            <div class="company-name">
-            <span >Unreal</span>
-            <br/>
-            <span>Gallery</span>
-            
+       <img src="images/icon.png" alt="">
+         
+       <form class = "searchbar" onsubmit="event.preventDefault();" role="search" >
+        <input id="search" type="search" placeholder="   Search..." autofocus required />
+        <button type="submit">Go</button></form>
           </div>
-          <div class="shopping-cart">
-         <a id='linkToChange' href="checkout.html">
-            <picture onclick="">
-                <source srcset="images/shopping-cart.png"
-                        media="(min-width: 900px)">
-                <img src="images/hamburger.png" alt="" />
-            </picture>
-        </a> 
-        </div>
-    </div>
+          <div class="subheader">
+            <nav class="categories">
+              <ul>
+                  <li><a href="#">Games</a>
+                  <li><a href="#">Forum</a>
+                  <li><a href="#">Download</a>
+              </ul>
+          </nav>
 
-    <form class="search-bar" action="/action_page.php">
-        <input class="search-box" type="text" placeholder="      Search.." name="search">
-        <button type="submit"><i class="search-button"><img src="images/search.png" alt=""></i></button>
-      </form>
-    </div>
-    
+
+          </div>
+        </div>
+          
     <div class="center-content">
         <div class="promo-slide">
             <div class="item">
@@ -49,7 +43,7 @@
             </div>
             
         </div>
-        <div class="center-img"><img src="images/girlbywater.jpg" alt="">
+        <div class="center-img"><img src="images/starter.jpg" alt="">
         <div class="center-img-text">
             <p>Nature is made of everything we see around us – trees, flowers, plants, animals, sky, mountains, 
                 forests and more. Human beings depend on nature to stay alive. Nature helps us breathe, gives us food, water, shelter, 
@@ -60,9 +54,8 @@
     <div class="center-content">
         <img class="boardwalk" src="images/boarderwalk.jpg" alt="">
     </div>
-     
 
-
+    <h3>Featured Photos</h3>
     <div class="product-container">   
         <a href="#modalWindow1" class="open "><img class="productImg"src="images/img1.jpg" alt=""></a>
         <a href="#modalWindow2" class="open "><img class="productImg"src="images/img2.jpg" alt=""></a>
