@@ -1,11 +1,13 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Tilt+Neon&display=swap');body {
   margin: 0px;
   padding: 0px;
   border: 0px;
+  background-color: var(--page-color);
 }
 
 :root {
   --primary-color: #2e4f4f;
+  --page-color: #efefef;
 }
 
 li {
@@ -80,6 +82,74 @@ a {
   border: solid 2px rgb(85, 82, 82);
   background-color: #5e8251;
   text-align: center;
+}
+
+.collections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.featuredProduct {
+  font-family: "Tilt Neon", cursive;
+  font-size: 2.5vw;
+  /* margin-left: 15vw; */
+  /* margin-left: -10vw; */
+}
+
+.filterButton {
+  /* width: 120px; */
+  min-width: 100px;
+  padding: 0.4%;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 2px rgb(85, 82, 82);
+  font-size: 1rem;
+}
+
+.filterButton:hover {
+  background-color: var(--primary-color);
+  color: var(--page-color);
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 550px;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+.card-image {
+  /* background-color: #FFFFFF; */
+  padding: 1%;
+  margin: 1%;
+  width: 300px;
+  /* border-radius: 7px; */
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #FFFFFF;
+}
+.product-card-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+}
+.product-card-cost {
+  font-size: 1.3rem;
+}
+
+.card {
 }
 
 @media screen and (max-width: 640px) {
@@ -169,7 +239,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align:center;
+    text-align: center;
   }
   #firstParagraph {
     padding: 0 5%;
@@ -202,7 +272,6 @@ a {
     margin: 0;
     margin-left: 70px;
   }
-
 
   #firstParagraph {
     grid-row-end: span 2;
