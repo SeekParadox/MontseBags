@@ -3,6 +3,10 @@ import bagPerfume from "../assets/images/bag-perfume.jpg";
 import ProductCard from "./ProductCard";
 import thisImage from "../assets/images/testImage.jpg";
 import testImage2 from "../assets/images/testImage2.jpg";
+import { useState } from "react";
+
+
+
 
 const Home = () => {
   return (

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Tilt+Neon&display=swap');body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Tilt+Neon&display=swap");
+body {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -21,14 +22,8 @@ a {
 }
 /* HEADER */
 .Header {
-  display: flex;
-  justify-content: space-around;
   height: 50px;
   background-color: var(--primary-color);
-}
-
-.Header > ul {
-  display: inline-block;
 }
 
 #leftNav,
@@ -40,19 +35,6 @@ a {
 
 .logo {
   margin: 0 auto;
-}
-
-.hamburger {
-  /* align-self: center; */
-  display: none;
-}
-
-.closeButton {
-  display: none;
-}
-
-.sideBar {
-  display: none;
 }
 
 /* Mid Section */
@@ -75,7 +57,6 @@ a {
 }
 
 #shopButton {
-  /* margin: 0; */
   width: 120px;
   height: 30px;
   border-radius: 20px;
@@ -98,13 +79,9 @@ a {
 }
 
 .filterButton {
-  /* width: 120px; */
-  min-width: 100px;
   padding: 0.4%;
-  height: 40px;
   border-radius: 20px;
   border: solid 2px rgb(85, 82, 82);
-  font-size: 1rem;
 }
 
 .filterButton:hover {
@@ -132,24 +109,22 @@ a {
   /* background-color: #FFFFFF; */
   padding: 1%;
   margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffffff;
   width: 300px;
   /* border-radius: 7px; */
 }
 
-.card-image img {
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #FFFFFF;
+.card-image:hover {
+  cursor: pointer;
 }
+
 .product-card-description {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
 }
 .product-card-cost {
   font-size: 1.3rem;
-}
-
-.card {
 }
 
 @media screen and (max-width: 640px) {
@@ -172,21 +147,40 @@ a {
   #firstParagraph {
     display: none;
   }
+
+  .collections {
+    gap: 10px;
+  }
+
+  .filterButton {
+    width: 70px;
+    padding: 0.4%;
+    height: 25px;
+    font-size: 0.565rem;
+  }
 }
 
+@media screen and (min-width: 641px) {
+  .filterButton {
+    width: 100px;
+    padding: 0.4%;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+}
 @media screen and (max-width: 940px) {
-  .logo {
-    display: none;
+  .SmallScreens {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
   }
 
   .hamburger {
     align-self: center;
-    justify-self: flex-end;
-    display: block;
     flex-shrink: 0;
     margin-left: auto;
-
-    /* margin-right: 10px; */
+    margin-right: 10px;
   }
 
   .hamburger:hover {
@@ -202,10 +196,6 @@ a {
 
   .closeButton:hover {
     cursor: pointer;
-  }
-
-  .rightNav > * {
-    display: none;
   }
 
   .sideBar {
@@ -247,6 +237,13 @@ a {
 }
 
 @media screen and (min-width: 941px) {
+  .LargeScreens {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+  }
+
   .topSection {
     width: 90%;
     margin: 0 auto 0 auto;
@@ -277,5 +274,16 @@ a {
     grid-row-end: span 2;
     padding: 0 100px 0 100px;
     font-size: 1.3vw;
+  }
+
+  .filterButton {
+    min-width: 120px;
+    width: fit-content;
+    padding: 0.4%;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 2px rgb(85, 82, 82);
+    /* font-size: 0.9rem */
+    font-size: calc(0.23rem + 0.5vw);
   }
 }
