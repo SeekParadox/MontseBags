@@ -11,7 +11,6 @@ const Header = () => {
 
   window.onload = () => {
     if (window.screen.width > 940 && window.innerWidth > 940) {
-      // SetSize(true);
       SetSize(true);
     } else {
       SetSize(false);
@@ -26,10 +25,8 @@ const Header = () => {
     }
   };
 
-
   return (
     <div className="Header">
-      
       {largeScreen ? (
         <LargeScreens items={items} />
       ) : (

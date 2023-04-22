@@ -4,18 +4,17 @@ import ProductModel from "./ProductModel";
 const ProductCard = (props) => {
   return (
     <div className="ProductCard">
-        {/* <div className="card-image"> */}
-          <img src={props.image} className="card-image" alt=""/>
-        {/* </div> */}
+      <img src={props.image} className="card-image" alt="" />
+
       <span className="product-card-text product-card-description">
         {props.description}
       </span>
       <br />
       <span className="product-card-text product-card-cost">{props.cost}</span>
       <br />
-      <ProductModel></ProductModel>
+      <ProductModel image={props.image}></ProductModel>
     </div>
-  )
-}
+  );
+};
 
 export default ProductCard;

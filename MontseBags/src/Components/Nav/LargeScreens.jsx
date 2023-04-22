@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/images/bags.png";
 
 const LargeScreens = (props) => {
   return (
@@ -15,7 +14,7 @@ const LargeScreens = (props) => {
           <li>ABOUT</li>
         </a>
       </ul>
-      <img className="logo" src={logo} alt="" />
+      <img className="logo" src="/images/bags.png" alt="" />
 
       <ul className="rightNav">
         <a href="">
